@@ -23,6 +23,13 @@ from deap import tools
 import random
 import math
 from copy import deepcopy
+#这是一个Python类 MOEAD，用于实现基于分解的多目标进化算法 (MOEA/D)。
+
+在初始化函数中，它接受一些参数，包括种群大小 mu，交叉率 cxpb，变异率 mutpb，种群 population，算法停止条件 maxEvaluations 或者 ngen，邻居的数量 T，以及其他一些算法的内部变量。
+
+算法包括一些重要的变量和方法，包括 z_ (理想点)， lambda_ (权重向量)，neighbourhood_ (邻居)，以及一些算法操作的方法，例如交叉和变异。
+
+该类的目的是执行MOEA/D算法并优化给定的多目标优化问题。
 
 class MOEAD(object):
 
